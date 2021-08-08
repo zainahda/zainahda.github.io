@@ -170,14 +170,6 @@ svg {
   text-align: justify;
 }
 
-.about-img img {
-  border-radius: 50%;
-  width: 350px;
-  height: 350px;
-  border: 8px solid rgba(166, 227, 233, 1);
-  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.7);
-}
-
 .about-text p {
   width: 60%;
   font-size: 25px;
@@ -200,6 +192,22 @@ aside {
   flex-direction: column;
 }
 
+.profile header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-img img {
+  display: flex;
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  border: 5px solid rgba(166, 227, 233, 1);
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
 .profile h2,
 h3 {
   display: flex;
@@ -212,8 +220,8 @@ h3 {
 
 .card {
   position: absolute;
-  top: 850px;
-  height: 50%;
+  top: 800px;
+  height: 60%;
   margin: 0 10px;
   border-radius: 5px;
   padding: 20px;
@@ -428,6 +436,7 @@ li img {
 }
 /* float button end */
 
+/* tablet size */
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 80%;
@@ -472,6 +481,7 @@ li img {
   }
 }
 
+/* phone size */
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
@@ -507,7 +517,7 @@ li img {
   }
   .jumbotron {
     flex-direction: column;
-    margin: 50px 100px;
+    margin: 50px auto;
   }
   .hero-img {
     width: 350px;
@@ -527,6 +537,15 @@ li img {
     width: 250px;
     height: 250px;
   } 
+  .gallery {
+    margin-top: 200px;
+  }
+  #content {
+    margin: auto;
+  }
+  .my-project {
+    margin: 0;
+  }
 }
 
 /* nav additional start */
